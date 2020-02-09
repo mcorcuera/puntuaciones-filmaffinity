@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Puntuaciones de Filmaffinity</string>
+    <string name="button_close">Cerrar</string>
+    <string name="button_open_link">Abrir en FA</string>
+    <string name="app_headline">Puntuaciones de Filmaffinity</string>
+    <string name="app_short_description">Encuentra las puntuaciones de Filmaffinity sin salir de tu app de video preferida</string>
+    <string name="permission_title">Lo importante, primero</string>
+    <string name="permission_description">Para poder mostrar la puntuacion de Filmaffinity sobre las series y películas, necesitamos que nos des permiso para dibujar sobre otras aplicaciones en tus ajustes</string>
+    <string name="permission_cta">Dar permiso</string>
+    <string name="how_it_works_title">¿Cómo funciona?</string>
+    <string name="how_it_works_description"><![CDATA[Abre los detalles de una serie o película en Netflix, Filmin o Primevideo y haz click en <b>Compartir</b>]]></string>
+    <string name="copy_link_title">\Copia el enlace</string>
+    <string name="copy_link_description"><![CDATA[Selecciona la opción <b>Copiar enlace</b> en el menú de <b>Compartir</b>]]></string>
+    <string name="share_link_title">\Comparte el video</string>
+    <string name="share_link_description"><![CDATA[Haz click en <b>Más opciones</b> en el menú de <b>Compartir</b> y selecciona esta aplicación en la lista]]></string>
+    <string name="rating_title">Puntuación</string>
+    <string name="rating_description">Al momento aparecerá la puntuación de Filmaffinity sobre la serie. Haz click en ella para ver mas detalles</string>
+    <string name="how_it_works_button">Como funciona</string>
+    <string name="success_text">¡Todo listo! Ya puedes usar la aplicación. Comparte el link de una película o serie y abrelo con esta App</string>
+    <string name="success_text_2">Netflix | Filmin | Primevideo </string>
+    <string name="rating_not_found">No se ha encontrado la puntuación en Filmaffinity</string>
+    <string name="find_rating_error_toast">Error buscando la puntuación. Intentalo de nuevo</string>
+    <string name="share_label">Puntuación</string>
+    <string name="permission_draw_declined_title">Permiso no concedido</string>
+    <string name="permission_draw_declined_description">Para poder funcionar, esta app necesita permisos para dibujar sobre otras aplicaciones</string>
+    <string name="permission_draw_declined_try_again">Volver a intentarlo</string>
+    <string name="permission_draw_declined_cancel">Cancelar</string>
+</resources>

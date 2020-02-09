@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#447CAD</color>
+    <color name="colorPrimaryDark">#447CAD</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPositive">#46D36A</color>
+    <color name="colorNeutral">#DD9737</color>
+    <color name="colorNegative">#CE5225</color>
+    <color name="colorFilmaffinityDark">#447CAD</color>
+    <color name="colorFilmaffinity">#447CAD</color>
+    <color name="colorFilmaffinityLight">#DBECFA</color>
+    <color name="colorBackground">#163047</color>
+    <color name="white">#FFFFFF</color>
+</resources>

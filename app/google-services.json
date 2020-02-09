@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "493511190259",
+    "firebase_url": "https://filmaffinity-netflix.firebaseio.com",
+    "project_id": "filmaffinity-netflix",
+    "storage_bucket": "filmaffinity-netflix.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493511190259:android:24b10ccf303638f4f8f986",
+        "android_client_info": {
+          "package_name": "com.mikel.netflixfilmaffinity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493511190259-3eg1l4jgq0na44gpsjrhs0hrqt7lqpfr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9TQ0XLuYu0bpZTKYzF54WeopUAmj9aQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493511190259-3eg1l4jgq0na44gpsjrhs0hrqt7lqpfr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
