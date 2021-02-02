@@ -3,8 +3,11 @@ package com.mikel.filmaffinity.intro
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
+import androidx.core.content.ContextCompat
+import androidx.core.graphics.toColor
 import com.heinrichreimersoftware.materialintro.app.IntroActivity
 import com.heinrichreimersoftware.materialintro.app.NavigationPolicy
+import com.heinrichreimersoftware.materialintro.slide.FragmentSlide
 import com.heinrichreimersoftware.materialintro.slide.SimpleSlide
 import com.mikel.filmaffinity.BuildConfig
 import com.mikel.filmaffinity.PermissionChecker
@@ -17,44 +20,34 @@ class FilmaffinityIntroActivity : IntroActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        val skipFirst = intent.getBooleanExtra("skipFirst", false)
 
-        val introSlide = basePage()
-            .title(R.string.app_headline)
-            .description(R.string.app_short_description)
-            .image(R.drawable.intro_logos)
+        val introSlide = fragmentPage()
+            .fragment(OnboardingStepIntro(showAllReady = false))
             .build()
 
-        val permissionSlide = basePage()
-            .title(R.string.permission_title)
-            .description(R.string.permission_description)
-            .buttonCtaLabel(R.string.permission_cta)
-            .image(R.drawable.permission)
-            .buttonCtaClickListener {
-                openPermissions()
-            }
+        val permissionSlide = fragmentPage()
+            .fragment(OnboardingStepPermission { openPermissions() })
             .build()
 
-        val instructionsDetails = basePage()
-            .title(R.string.how_it_works_title)
-            .image(R.drawable.instruction_1)
-            .descriptionHtml(getString(R.string.how_it_works_description))
+
+        val instructionsDetails = fragmentPage()
+            .fragment(OnboardingStepHowItWorks())
             .build()
 
-        val instructionShare = basePage()
-            .title(R.string.share_link_title)
-            .image(R.drawable.more_options)
-            .descriptionHtml(getString(R.string.share_link_description))
+        val instructionShare = fragmentPage()
+            .fragment(OnboardingStepShare())
             .build()
 
-        val instructionRating = basePage()
-            .title(R.string.rating_title)
-            .image(R.drawable.rating_screen)
-            .descriptionHtml(getString(R.string.rating_description))
+        val instructionRating = fragmentPage()
+            .fragment(OnboardingFinalStep())
             .build()
 
         isButtonBackVisible = false
 
-        addSlide(introSlide)
+        if (!skipFirst) {
+            addSlide(introSlide)
+        }
 
         if (!checker.isRequiredPermissionGranted && BuildConfig.BUILD_TYPE != "firebaseTest") {
             addSlide(permissionSlide)
@@ -76,6 +69,8 @@ class FilmaffinityIntroActivity : IntroActivity() {
         addSlide(instructionsDetails)
         addSlide(instructionShare)
         addSlide(instructionRating)
+
+        window.statusBarColor = ContextCompat.getColor(this, R.color.colorAccent)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -106,10 +101,9 @@ class FilmaffinityIntroActivity : IntroActivity() {
         )
     }
 
-    private fun basePage(): SimpleSlide.Builder {
-        return SimpleSlide.Builder()
-            .scrollable(true)
-            .backgroundDark(R.color.white)
+    private fun fragmentPage(): FragmentSlide.Builder {
+        return FragmentSlide.Builder()
+            .backgroundDark(R.color.colorBackgroundDark)
             .background(R.color.colorBackground)
     }
 }

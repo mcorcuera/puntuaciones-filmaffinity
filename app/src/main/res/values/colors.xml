@@ -10,5 +10,6 @@
     <color name="colorFilmaffinity">#447CAD</color>
     <color name="colorFilmaffinityLight">#DBECFA</color>
     <color name="colorBackground">#163047</color>
+    <color name="colorBackgroundDark">#0C1A27</color>
     <color name="white">#FFFFFF</color>
 </resources>

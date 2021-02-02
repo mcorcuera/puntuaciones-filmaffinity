@@ -17,7 +17,6 @@ class PrimeVideoFilmProvider : FilmProvider("primevideo.com") {
 
         val connectionResponse = connection.execute()
         val sessionCookie = connectionResponse.cookie("session-id")
-        val url = connectionResponse.url()
 
         return connection
             .cookie("lc-main-av", "en_US")

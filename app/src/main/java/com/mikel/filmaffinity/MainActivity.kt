@@ -8,6 +8,7 @@ import android.view.View.INVISIBLE
 import android.view.View.VISIBLE
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.os.bundleOf
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.mikel.filmaffinity.intro.FilmaffinityIntroActivity
 import com.mikel.filmaffinity.service.OnCopyService
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var sp: SharedPreferences
     private lateinit var firebaseAnalytics: FirebaseAnalytics
 
+    private var isIntroOpen: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,7 +33,10 @@ class MainActivity : AppCompatActivity() {
         content.visibility = INVISIBLE
 
         findViewById<Button>(R.id.howItWorksButton).setOnClickListener {
-            showIntro()
+            if (!isIntroOpen) {
+                showIntro(skipFirst = true)
+                isIntroOpen = true
+            }
         }
 
         if (!hasCompletedIntro()) {
@@ -54,9 +59,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun showIntro() {
+    private fun showIntro(skipFirst: Boolean = false) {
         val intent =
             Intent(this, FilmaffinityIntroActivity::class.java) // Call the AppIntro java class
+        intent.putExtra("skipFirst", skipFirst);
         startActivityForResult(intent, REQUEST_CODE_INTRO)
     }
 
@@ -67,6 +73,7 @@ class MainActivity : AppCompatActivity() {
     ) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == REQUEST_CODE_INTRO) {
+            isIntroOpen = false
             if (resultCode == RESULT_OK) {
                 completeIntro()
             }
@@ -88,19 +95,5 @@ class MainActivity : AppCompatActivity() {
         startCopyService()
         val content = findViewById<View>(R.id.main_content)
         content.visibility = VISIBLE
-
-        if (BuildConfig.BUILD_TYPE == "firebaseTest") {
-            content.findViewById<View>(R.id.testLayout).visibility = VISIBLE
-            content.findViewById<Button>(R.id.testButton).setOnClickListener {
-                val clipboard: ClipboardManager =
-                    getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
-                val clip = ClipData.newPlainText(
-                    "netflixLink",
-                    "https://www.netflix.com/ch/title/80153467"
-                )
-                clipboard.setPrimaryClip(clip)
-            }
-
-        }
     }
 }
