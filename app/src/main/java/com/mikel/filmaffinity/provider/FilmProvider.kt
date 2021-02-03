@@ -31,15 +31,15 @@ abstract class FilmProvider(private val host: String) {
     fun getInformation(url: String): FilmInformation? {
         if (!supports(url)) return null
 
-        val doc = prepareConnection(Jsoup.connect(url))
+        val doc = prepareConnection(url)
             .userAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36").get()
         return parseResults(doc, url)
     }
 
     abstract fun parseResults(doc: Document, url: String): FilmInformation?
 
-    open fun prepareConnection(connection: Connection): Connection {
-        return connection
+    open fun prepareConnection(url: String): Connection {
+        return Jsoup.connect(url)
     }
 
 }

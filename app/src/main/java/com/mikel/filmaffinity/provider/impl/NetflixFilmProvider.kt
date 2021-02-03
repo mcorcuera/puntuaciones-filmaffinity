@@ -14,8 +14,8 @@ import java.net.URL
 class NetflixFilmProvider : FilmProvider("netflix.com") {
 
 
-    override fun prepareConnection(connection: Connection): Connection {
-        return connection.header("Accept-Language", "en")
+    override fun prepareConnection(url: String): Connection {
+        return super.prepareConnection(url).header("Accept-Language", "en")
     }
 
     @AddTrace(name = "find_video")

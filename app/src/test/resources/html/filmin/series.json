@@ -1,0 +1,209 @@
+{
+  "data": {
+    "id": 27722,
+    "type": "serie",
+    "slug": "exit",
+    "url": "https:\/\/www.filmin.es\/serie\/exit",
+    "title": "Exit",
+    "original_title": "Exit",
+    "year": 2019,
+    "excerpt": "Basada en el testimonio real de cuatro inversores de enorme \u00e9xito, la serie esc\u00e1ndalo del a\u00f1o en Escandinavia expone c\u00f3mo la gente con mucho dinero se evade del estr\u00e9s y el hast\u00edo vital.",
+    "synopsis": "La serie esc\u00e1ndalo de la temporada en Escandinavia. Basada en el testimonio real de cuatro inversores de enorme \u00e9xito de Oslo, esta comedia negr\u00edsima expone de qu\u00e9 modo la gente con mucho, mucho dinero se evade del estr\u00e9s y el hast\u00edo vital. Drogas, prostituci\u00f3n, humillaciones y violencia extrema en esta producci\u00f3n noruega, premiada en el prestigioso festival Series Mania, que sigue la estela de t\u00edtulos como \u0022El Lobo de Wall Street\u0022 o \u0022Succession\u0022.\u003Cbr\u003E\u003Cbr\u003ECuatro amigos, Adam, William, Henrik y Jeppe, buscan una v\u00eda de escape para su rutina diaria. Los cuatro son empresarios de enorme \u00e9xito y comparten su trastorno narcisista y la necesidad de mantener las formas de cara a la galer\u00eda mientras dan rienda suelta a su compulsivo deseo de sexo, violencia y drogas.\u00a0Seguimos sus vidas en sus lujosas mansiones, sus oficinas en edificios alt\u00edsimos, sus residencias vacacionales, en Noruega o en el extranjero, y sus fiestas salvajes.\u00a0",
+    "duration_in_minutes": 30,
+    "quality": "HD",
+    "qualification": {
+      "id": 5,
+      "name": "NR \u003C 16 a\u00f1os",
+      "code": "16+",
+      "description": "No recomendada para menores de 16 a\u00f1os"
+    },
+    "num_votes": 1120,
+    "avg_votes": 7.9000000000000004,
+    "avg_votes_formatted": "7,9",
+    "image_card": "https:\/\/static.filmin.es\/images\/media\/27722\/3\/card_0_3.png",
+    "image_poster": "https:\/\/static.filmin.es\/images\/media\/27722\/4\/poster_0_3.png",
+    "image_stills": [
+      "https:\/\/static.filmin.es\/images\/media\/27722\/3\/still_0_3.png",
+      "https:\/\/static.filmin.es\/images\/media\/27722\/3\/still_1_3.png",
+      "https:\/\/static.filmin.es\/images\/media\/27722\/2\/still_2_3.png",
+      "https:\/\/static.filmin.es\/images\/media\/27722\/2\/still_3_3.png",
+      "https:\/\/static.filmin.es\/images\/media\/27722\/4\/still_4_3.png"
+    ],
+    "video_trailer": {
+      "file": "https:\/\/extras.filmin.com\/exit-tr-v1.mp4",
+      "upload_date": 1583833737
+    },
+    "video_background": {
+      "file": "https:\/\/extras.filmin.com\/exit-tr-v1.mp4",
+      "upload_date": 1583833737
+    },
+    "directors": [
+      {
+        "id": 10343,
+        "slug": "oystein-karlsen",
+        "url": "https:\/\/www.filmin.es\/director\/oystein-karlsen",
+        "gender": "m",
+        "full_name": "\u00d8ystein Karlsen"
+      }
+    ],
+    "actors": [
+      {
+        "id": 17429,
+        "slug": "simon-j-berger",
+        "url": "https:\/\/www.filmin.es\/actor\/simon-j-berger",
+        "gender": "m",
+        "full_name": "Simon J. Berger"
+      },
+      {
+        "id": 23076,
+        "slug": "pal-sverre-hagen",
+        "url": "https:\/\/www.filmin.es\/actor\/pal-sverre-hagen",
+        "gender": "m",
+        "full_name": "P\u00e5l Sverre Hagen"
+      },
+      {
+        "id": 31310,
+        "slug": "tobias-santelmann",
+        "url": "https:\/\/www.filmin.es\/actor\/tobias-santelmann",
+        "gender": "m",
+        "full_name": "Tobias Santelmann"
+      },
+      {
+        "id": 19192,
+        "slug": "jon-oigarden",
+        "url": "https:\/\/www.filmin.es\/actor\/jon-oigarden",
+        "gender": "m",
+        "full_name": "Jon \u00d8igarden"
+      },
+      {
+        "id": 5123,
+        "slug": "agnes-kittelsen",
+        "url": "https:\/\/www.filmin.es\/actriz\/agnes-kittelsen",
+        "gender": "f",
+        "full_name": "Agnes Kittelsen"
+      }
+    ],
+    "characters": [],
+    "countries": [
+      {
+        "id": 119,
+        "slug": "noruega",
+        "name": "Noruega",
+        "url": "https:\/\/www.filmin.es\/catalogo\/pais\/noruega"
+      }
+    ],
+    "versions": [
+      {
+        "id": 55411,
+        "name": "Versi\u00f3n Original con Subt\u00edtulos",
+        "code": "VOS",
+        "language_audio": "Noruego",
+        "language_subtitles": []
+      }
+    ],
+    "genres": [
+      {
+        "id": 10,
+        "slug": "drama",
+        "name": "Drama",
+        "url": "https:\/\/www.filmin.es\/catalogo\/genero\/drama"
+      },
+      {
+        "id": 8,
+        "slug": "comedia",
+        "name": "Comedia",
+        "url": "https:\/\/www.filmin.es\/catalogo\/genero\/comedia"
+      }
+    ],
+    "tags": [
+      {
+        "id": 125,
+        "slug": "estreno-exclusivo",
+        "name": "Estreno exclusivo",
+        "url": "https:\/\/www.filmin.es\/catalogo\/tema\/estreno-exclusivo"
+      },
+      {
+        "id": 946,
+        "slug": "comedia-dramatica",
+        "name": "Comedia dram\u00e1tica",
+        "url": "https:\/\/www.filmin.es\/catalogo\/tema\/comedia-dramatica"
+      },
+      {
+        "id": 14,
+        "slug": "humor-negro",
+        "name": "Humor Negro",
+        "url": "https:\/\/www.filmin.es\/catalogo\/tema\/humor-negro"
+      },
+      {
+        "id": 714,
+        "slug": "capitalismo",
+        "name": "Capitalismo",
+        "url": "https:\/\/www.filmin.es\/catalogo\/tema\/capitalismo"
+      },
+      {
+        "id": 312,
+        "slug": "alta-sociedad",
+        "name": "Alta Sociedad",
+        "url": "https:\/\/www.filmin.es\/catalogo\/tema\/alta-sociedad"
+      },
+      {
+        "id": 61,
+        "slug": "sexo",
+        "name": "Sexo",
+        "url": "https:\/\/www.filmin.es\/catalogo\/tema\/sexo"
+      },
+      {
+        "id": 31,
+        "slug": "drogas",
+        "name": "Drogas",
+        "url": "https:\/\/www.filmin.es\/catalogo\/tema\/drogas"
+      },
+      {
+        "id": 178,
+        "slug": "corrupcion",
+        "name": "Corrupci\u00f3n",
+        "url": "https:\/\/www.filmin.es\/catalogo\/tema\/corrupcion"
+      },
+      {
+        "id": 68,
+        "slug": "prostitucion",
+        "name": "Prostituci\u00f3n",
+        "url": "https:\/\/www.filmin.es\/catalogo\/tema\/prostitucion"
+      },
+      {
+        "id": 1688,
+        "slug": "hipotecas-y-drogas",
+        "name": "Hipotecas y Drogas",
+        "url": "https:\/\/www.filmin.es\/catalogo\/tema\/hipotecas-y-drogas"
+      },
+      {
+        "id": 2142,
+        "slug": "noviembre-nordico",
+        "name": "Noviembre N\u00f3rdico",
+        "url": "https:\/\/www.filmin.es\/catalogo\/tema\/noviembre-nordico"
+      },
+      {
+        "id": 1933,
+        "slug": "series-nordicas",
+        "name": "Series n\u00f3rdicas",
+        "url": "https:\/\/www.filmin.es\/catalogo\/tema\/series-nordicas"
+      },
+      {
+        "id": 1958,
+        "slug": "thriller-financiero",
+        "name": "Thriller Financiero",
+        "url": "https:\/\/www.filmin.es\/catalogo\/tema\/thriller-financiero"
+      }
+    ],
+    "awards": [],
+    "producers": [],
+    "external_links": [],
+    "has_new_episodes": false,
+    "is_complete": false,
+    "theater_release": null,
+    "theater_release_date": null,
+    "theater_income_formatted": null,
+    "theater_spectators_formatted": null,
+    "seasons_count": 1
+  }
+}

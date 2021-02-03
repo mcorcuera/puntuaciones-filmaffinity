@@ -6,6 +6,7 @@ import com.mikel.filmaffinity.VideoLanguage
 import com.mikel.filmaffinity.VideoType
 import com.mikel.filmaffinity.provider.FilmProvider
 import org.jsoup.Connection
+import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import java.lang.Integer.parseInt
 import java.net.URL
@@ -13,12 +14,12 @@ import java.net.URL
 
 class PrimeVideoFilmProvider : FilmProvider("primevideo.com") {
 
-    override fun prepareConnection(connection: Connection): Connection {
+    override fun prepareConnection(url: String): Connection {
 
-        val connectionResponse = connection.execute()
+        val connectionResponse = Jsoup.connect(url).execute()
         val sessionCookie = connectionResponse.cookie("session-id")
 
-        return connection
+        return Jsoup.connect(url)
             .cookie("lc-main-av", "en_US")
             .cookie("session-id", sessionCookie)
     }

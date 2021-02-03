@@ -118,13 +118,9 @@ class FilmaffinityApi {
             val year = parseInt(it.selectFirst(".ye-w").text().trim())
             var type = VideoType.movie
 
-            if (title.contains("(TV Miniseries)", ignoreCase = true)) {
-                title = title.replace("(TV Miniseries)", "").trim()
-                type = VideoType.show
-            }
-
-            if (title.contains("(TV Series)", ignoreCase = true)) {
-                title = title.replace("(TV Series)", "").trim()
+            val seriesRegex =  """\(.*TV.*\)""".toRegex()
+            if (title.contains(seriesRegex)) {
+                title = title.replace(seriesRegex, "".trim())
                 type = VideoType.show
             }
 

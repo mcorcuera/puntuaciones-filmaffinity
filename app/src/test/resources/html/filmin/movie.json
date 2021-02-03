@@ -1,0 +1,218 @@
+{
+  "data": {
+    "id": 14599,
+    "type": "film",
+    "slug": "el-regalo",
+    "url": "https:\/\/www.filmin.es\/pelicula\/el-regalo",
+    "title": "El regalo",
+    "original_title": "The gift",
+    "year": 2015,
+    "excerpt": "Un magn\u00edfico thriller, tan inquietante como desconcertante, escrito y dirigido por Joel Edgerton, en su \u00f3pera prima como director.",
+    "synopsis": "Un magn\u00edfico thriller, tan inquietante como desconcertante, escrito y dirigido por Joel Edgerton, en su \u00f3pera prima como director.\u003Cbr\u003E\u003Cbr\u003ESimon y Robyn son la pareja perfecta, hasta que un extra\u00f1o irrumpe en sus vidas. Al principio, Simon no le reconoce, pero luego se da cuenta de que es Gordo, un antiguo compa\u00f1ero del instituto. Lo que Simon no sabe es que Gordo le guarda algo m\u00e1s que rencor por una cosa que hizo. Han pasado m\u00e1s de veinte a\u00f1os, pero Gordo est\u00e1 dispuesto a llegar hasta el final para vengarse.",
+    "duration_in_minutes": 108,
+    "quality": "HD",
+    "qualification": {
+      "id": 3,
+      "name": "NR \u003C 12 a\u00f1os",
+      "code": "12+",
+      "description": "No recomendada para menores de 12 a\u00f1os"
+    },
+    "num_votes": 892,
+    "avg_votes": 6.9000000000000004,
+    "avg_votes_formatted": "6,9",
+    "image_card": "https:\/\/static.filmin.es\/images\/media\/14599\/1\/card_0_3.png",
+    "image_poster": "https:\/\/static.filmin.es\/images\/media\/14599\/1\/poster_0_3.png",
+    "image_stills": [
+      "https:\/\/static.filmin.es\/images\/media\/14599\/1\/still_0_3.png",
+      "https:\/\/static.filmin.es\/images\/media\/14599\/1\/still_1_3.png",
+      "https:\/\/static.filmin.es\/images\/media\/14599\/1\/still_2_3.png",
+      "https:\/\/static.filmin.es\/images\/media\/14599\/1\/still_3_3.png"
+    ],
+    "video_trailer": {
+      "file": "https:\/\/extras.filmin.com\/el-regalo-2015-tr.mp4",
+      "upload_date": 1465918076
+    },
+    "video_background": {
+      "file": "https:\/\/extras.filmin.com\/el-regalo-2015-tr.mp4",
+      "upload_date": 1465918076
+    },
+    "directors": [
+      {
+        "id": 6674,
+        "slug": "joel-edgerton",
+        "url": "https:\/\/www.filmin.es\/director\/joel-edgerton",
+        "gender": "m",
+        "full_name": "Joel Edgerton"
+      }
+    ],
+    "actors": [
+      {
+        "id": 20466,
+        "slug": "allison-tolman",
+        "url": "https:\/\/www.filmin.es\/actriz\/allison-tolman",
+        "gender": "f",
+        "full_name": "Allison Tolman"
+      },
+      {
+        "id": 2532,
+        "slug": "jason-bateman",
+        "url": "https:\/\/www.filmin.es\/actor\/jason-bateman",
+        "gender": "m",
+        "full_name": "Jason Bateman"
+      },
+      {
+        "id": 1663,
+        "slug": "joel-edgerton",
+        "url": "https:\/\/www.filmin.es\/actor\/joel-edgerton",
+        "gender": "m",
+        "full_name": "Joel Edgerton"
+      },
+      {
+        "id": 4351,
+        "slug": "rebecca-hall",
+        "url": "https:\/\/www.filmin.es\/actriz\/rebecca-hall",
+        "gender": "f",
+        "full_name": "Rebecca Hall"
+      }
+    ],
+    "characters": [],
+    "countries": [
+      {
+        "id": 167,
+        "slug": "estados-unidos",
+        "name": "Estados Unidos",
+        "url": "https:\/\/www.filmin.es\/catalogo\/pais\/estados-unidos"
+      }
+    ],
+    "versions": [
+      {
+        "id": 57079,
+        "name": "Versi\u00f3n en Espa\u00f1ol",
+        "code": "VE",
+        "language_audio": "Espa\u00f1ol",
+        "language_subtitles": []
+      },
+      {
+        "id": 57078,
+        "name": "Versi\u00f3n Original con Subt\u00edtulos en Espa\u00f1ol",
+        "code": "VOSE",
+        "language_audio": "Ingl\u00e9s",
+        "language_subtitles": [
+          "Espa\u00f1ol"
+        ]
+      },
+      {
+        "id": 50845,
+        "name": "Versi\u00f3n Original con Subt\u00edtulos en Catal\u00e1n",
+        "code": "VOSC",
+        "language_audio": "Ingl\u00e9s",
+        "language_subtitles": [
+          "Catal\u00e1n"
+        ]
+      }
+    ],
+    "genres": [
+      {
+        "id": 15,
+        "slug": "thriller",
+        "name": "Thriller",
+        "url": "https:\/\/www.filmin.es\/catalogo\/genero\/thriller"
+      }
+    ],
+    "tags": [
+      {
+        "id": 27,
+        "slug": "opera-prima",
+        "name": "\u00d3pera Prima",
+        "url": "https:\/\/www.filmin.es\/catalogo\/tema\/opera-prima"
+      },
+      {
+        "id": 37,
+        "slug": "burguesia",
+        "name": "Burgues\u00eda",
+        "url": "https:\/\/www.filmin.es\/catalogo\/tema\/burguesia"
+      },
+      {
+        "id": 81,
+        "slug": "venganza",
+        "name": "Venganza",
+        "url": "https:\/\/www.filmin.es\/catalogo\/tema\/venganza"
+      },
+      {
+        "id": 234,
+        "slug": "terror-psicologico",
+        "name": "Terror Psicol\u00f3gico",
+        "url": "https:\/\/www.filmin.es\/catalogo\/tema\/terror-psicologico"
+      },
+      {
+        "id": 324,
+        "slug": "obsesiones",
+        "name": "Obsesiones",
+        "url": "https:\/\/www.filmin.es\/catalogo\/tema\/obsesiones"
+      },
+      {
+        "id": 343,
+        "slug": "reencuentros",
+        "name": "Reencuentros",
+        "url": "https:\/\/www.filmin.es\/catalogo\/tema\/reencuentros"
+      },
+      {
+        "id": 580,
+        "slug": "crisis-de-pareja",
+        "name": "Crisis de Pareja",
+        "url": "https:\/\/www.filmin.es\/catalogo\/tema\/crisis-de-pareja"
+      },
+      {
+        "id": 1013,
+        "slug": "thriller-sobre-venganza",
+        "name": "Thriller sobre Venganza",
+        "url": "https:\/\/www.filmin.es\/catalogo\/tema\/thriller-sobre-venganza"
+      }
+    ],
+    "awards": [
+      {
+        "category": "Mejor Actor",
+        "icon": "sitges",
+        "name": "Festival de Sitges",
+        "slug": "festival-de-sitges",
+        "year": null
+      },
+      {
+        "category": "Nominaci\u00f3n - Mejor Thriller",
+        "icon": "empire-awards",
+        "name": "Empire Awards",
+        "slug": "empire-awards",
+        "year": null
+      },
+      {
+        "category": "Nominaci\u00f3n - Mejor Thriller",
+        "icon": "academy-of-science-fiction-fantasy-horror-films",
+        "name": "Academy of Science Fiction, Fantasy \u0026 Horror Films",
+        "slug": "academy-of-science-fiction-fantasy-horror-films",
+        "year": null
+      },
+      {
+        "category": "Mejor Actor",
+        "icon": "fangoria-chainsaw-awards",
+        "name": "Fangoria Chainsaw Awards",
+        "slug": "fangoria-chainsaw-awards",
+        "year": null
+      }
+    ],
+    "producers": [],
+    "external_links": [
+      {
+        "id": 7809,
+        "type": "imdb",
+        "uri": "tt4178092"
+      }
+    ],
+    "has_new_episodes": false,
+    "is_complete": false,
+    "theater_release": 1458000000,
+    "theater_release_date": 1458000000,
+    "theater_income_formatted": "757.436,00\u00a0\u20ac",
+    "theater_spectators_formatted": 122120,
+    "seasons_count": null
+  }
+}
