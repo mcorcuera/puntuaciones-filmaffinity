@@ -1,17 +1,16 @@
 package com.mikel.filmaffinity
 
-import android.content.*
-import android.os.Build
+import android.content.Context
+import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
 import android.view.View.INVISIBLE
 import android.view.View.VISIBLE
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.os.bundleOf
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.mikel.filmaffinity.intro.FilmaffinityIntroActivity
-import com.mikel.filmaffinity.service.OnCopyService
 
 
 const val REQUEST_CODE_INTRO = 1234
@@ -43,19 +42,6 @@ class MainActivity : AppCompatActivity() {
             showIntro()
         } else {
             startMainApp()
-        }
-    }
-
-    private fun startCopyService() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            return
-        }
-
-        val copyIntent = Intent(this, OnCopyService::class.java)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            startForegroundService(copyIntent)
-        } else {
-            startService(copyIntent)
         }
     }
 
@@ -92,7 +78,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun startMainApp() {
-        startCopyService()
         val content = findViewById<View>(R.id.main_content)
         content.visibility = VISIBLE
     }

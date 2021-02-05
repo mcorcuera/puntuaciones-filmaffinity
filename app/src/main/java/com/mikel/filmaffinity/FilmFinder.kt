@@ -27,7 +27,7 @@ class FilmFinder {
     }
 
     private fun getProvider(url: String): FilmProvider? {
-        return providers.first { it.supports(url) }
+        return providers.firstOrNull { it.supports(url) }
     }
 
 }

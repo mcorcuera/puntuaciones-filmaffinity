@@ -9,7 +9,18 @@ import android.view.ViewGroup
 import com.mikel.filmaffinity.R
 import kotlinx.android.synthetic.main.fragment_onboarding_step_intro.*
 
-class OnboardingStepIntro(val showAllReady: Boolean = true) : Fragment() {
+private const val ARG_SHOW_ALL_READY = "showAllReady"
+
+class OnboardingStepIntro : Fragment() {
+
+    private var showAllReady: Boolean = true
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        arguments?.let {
+            showAllReady = it.getBoolean(ARG_SHOW_ALL_READY, true)
+        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,5 +36,15 @@ class OnboardingStepIntro(val showAllReady: Boolean = true) : Fragment() {
         if (showAllReady) {
             allReadyText.visibility = VISIBLE
         }
+    }
+
+    companion object {
+        @JvmStatic
+        fun newInstance(showAllReady: Boolean) =
+                OnboardingStepIntro().apply {
+                    arguments = Bundle().apply {
+                        putBoolean(ARG_SHOW_ALL_READY, showAllReady)
+                    }
+                }
     }
 }

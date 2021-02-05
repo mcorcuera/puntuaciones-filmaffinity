@@ -8,10 +8,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import com.bumptech.glide.Glide
+import com.mikel.filmaffinity.PermissionChecker
 import com.mikel.filmaffinity.R
 import kotlinx.android.synthetic.main.fragment_onboarding_step_permission.*
 
-class OnboardingStepPermission(val onCta: () -> Unit) : Fragment() {
+class OnboardingStepPermission : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,7 +24,7 @@ class OnboardingStepPermission(val onCta: () -> Unit) : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        permissionButton.setOnClickListener { onCta() }
+        permissionButton.setOnClickListener { PermissionChecker(requireContext()).openPermissions(requireActivity()) }
 
         var instructionGif = R.drawable.permission_10
 

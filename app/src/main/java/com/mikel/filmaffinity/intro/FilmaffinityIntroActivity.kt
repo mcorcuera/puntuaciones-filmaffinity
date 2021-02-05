@@ -23,11 +23,11 @@ class FilmaffinityIntroActivity : IntroActivity() {
         val skipFirst = intent.getBooleanExtra("skipFirst", false)
 
         val introSlide = fragmentPage()
-            .fragment(OnboardingStepIntro(showAllReady = false))
+            .fragment(OnboardingStepIntro.newInstance(showAllReady = false))
             .build()
 
         val permissionSlide = fragmentPage()
-            .fragment(OnboardingStepPermission { openPermissions() })
+            .fragment(OnboardingStepPermission())
             .build()
 
 
@@ -85,20 +85,12 @@ class FilmaffinityIntroActivity : IntroActivity() {
                     .setTitle(getString(R.string.permission_draw_declined_title))
                     .setMessage(getString(R.string.permission_draw_declined_description))
                     .setPositiveButton(getString(R.string.permission_draw_declined_try_again)) { _, _ ->
-                        openPermissions()
+                        checker.openPermissions(this)
                     }
                     .setNegativeButton(getString(R.string.permission_draw_declined_cancel)) { dialog, _ -> dialog.cancel() }
                     .show()
             }
         }
-    }
-
-    private fun openPermissions() {
-        val intent = checker.createRequiredPermissionIntent()
-        startActivityForResult(
-            intent,
-            PermissionChecker.REQUIRED_PERMISSION_REQUEST_CODE
-        )
     }
 
     private fun fragmentPage(): FragmentSlide.Builder {

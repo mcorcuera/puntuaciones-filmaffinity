@@ -1,5 +1,6 @@
 package com.mikel.filmaffinity
 
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
@@ -21,6 +22,14 @@ class PermissionChecker(private val mContext: Context) {
             )
         } else null
     }
+    
+    fun openPermissions(activity: Activity) {
+        val intent = createRequiredPermissionIntent()
+        activity.startActivityForResult(
+                intent,
+                REQUIRED_PERMISSION_REQUEST_CODE
+        )
+    }
 
     private val isMarshmallowOrHigher: Boolean
         get() = Build.VERSION.SDK_INT >= Build.VERSION_CODES.M
@@ -28,5 +37,6 @@ class PermissionChecker(private val mContext: Context) {
     companion object {
         const val REQUIRED_PERMISSION_REQUEST_CODE = 2121
     }
+
 
 }

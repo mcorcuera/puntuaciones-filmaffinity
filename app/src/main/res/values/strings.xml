@@ -5,7 +5,7 @@
     <string name="app_headline">Puntuaciones de Filmaffinity</string>
     <string name="app_short_description">Encuentra las puntuaciones de Filmaffinity sin salir de tu app de video preferida</string>
     <string name="app_long_description_line_1">Encuentra una buena serie o película gracias a <b>Filmaffinity</b> sin salir de tu app de video favorita.</string>
-    <string name="app_long_description_line_2">Simplemente comparte la serio o película con esta aplicación y la puntuación aparecerá directamente en tu pantalla.</string>
+    <string name="app_long_description_line_2">Simplemente comparte la serie o película con esta aplicación y la puntuación aparecerá directamente en tu pantalla.</string>
     <string name="permission_title">Lo importante, primero</string>
     <string name="permission_description">Para poder mostrar la puntuacion de Filmaffinity sobre las series y películas, necesitamos que nos des permiso para dibujar sobre otras aplicaciones en tus ajustes</string>
     <string name="permission_cta">Dar permiso</string>
@@ -28,4 +28,6 @@
     <string name="permission_draw_declined_try_again">Volver a intentarlo</string>
     <string name="permission_draw_declined_cancel">Cancelar</string>
     <string name="all_ready">Todo listo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

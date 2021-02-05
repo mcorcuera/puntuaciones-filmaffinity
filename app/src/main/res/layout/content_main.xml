@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="100" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/howItWorksButton"
             style="@style/FaButton"
             android:layout_width="wrap_content"
